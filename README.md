@@ -1,14 +1,14 @@
-# llm-based-chatbot-using-ollama-3.1
-This is a student project code  to demonstrate setting building up a llm based chat bot using ollama 3.1
+# llm-based-chatbot-using-ollama-3.2
+This is a student project code  to demonstrate setting building up a llm based chat bot using ollama 3.2
 
 Step 1: At first we need to create an environment variable. We will install all the packages which are needed to run this project in this envrionment.to create the environment we open a new terminal and write command 
 "conda create -p venv python==3.17
 As a we will see that venv folder is created. In this venv folder only we will install all the packages
 
- Step 2 : Download ollama3.1 from ollama.com and install it. It helps to work with ollama3.1 online
+ Step 2 : Download ollama3.2 from ollama.com and install it. It helps to work with ollama3.2 online
 After installation it can be run offline 
 by writing the command
-ollama run llama3.1
+ollama run llama3.2
 
 Step 3 : create environment variables. and after that we need to activate the environment by the command
 "conda activate venv"
@@ -72,11 +72,11 @@ prompt=ChatPromptTemplate.from_messages(
 
 ## streamlit framework
 
-st.title('Langchain Demo With LLAMA3.1 API')
+st.title('Langchain Demo With LLAMA3.2 API')
 input_text=st.text_input("Search the topic u want")
 Now we write code for ollama llm call
 # ollama LLAma2 LLm 
-llm=Ollama(model="llama3.1")
+llm=Ollama(model="llama3.2")
 output_parser=StrOutputParser() // it will display out put in format of string to the user
 
 
